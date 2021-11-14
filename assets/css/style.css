@@ -6,6 +6,10 @@
 
 
 body {
+    background-image: url(../images/computer-guy.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Helvetica, Arial, sans-serif;
     
   }
@@ -60,6 +64,7 @@ body {
     float: right;
   }
 
+  /* about me section style*/
   .intro {
     text-align: center;
   }
@@ -79,4 +84,67 @@ body {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    border-bottom: 3px solid;
+    border-color: silver;
   }
+
+  /* about me style end */
+
+  /* run buddy style section */
+
+  .run {
+      background: gray;
+    text-align: center;
+    
+  }
+
+  .run h2 {
+    font-size: 55px;
+    color: black;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+  }
+
+  .run p {
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;  
+  }
+
+
+/* run buddy style end */
+
+/* remaining project "work" style */
+
+
+
+  .password p {
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;  
+  }
+
+  
+
+  .quiz p {
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;  
+  }
+
+  
+
+  .password, .quiz, .robo {
+    text-align: center;
+    background: rgb(58, 56, 56);
+
+
+
+  }
+
+
+
+
+
+
+/* "work style end */
