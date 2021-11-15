@@ -81,6 +81,10 @@ body {
     
   }
 
+  .run img {
+      width: 900px;
+  }
+
   .run h2 {
     font-size: 55px;
     color: black;
@@ -99,20 +103,30 @@ body {
 
 /* remaining project "work" style */
 
-.class {
-    width: 100%;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+
+
+.flex-row {
+    display: flex;
 }
 
+
+
+.work {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.flex-row {
+    display: flex;
+}
 
 
   .password p, .quiz p, .robo p{
     width: 80%;
     font-size: 20px;
     margin: 0 auto;  
+    border-bottom: gray;
   }
 
 
@@ -124,9 +138,17 @@ body {
     width: 300px;  
     height: auto;  
     text-align: center;  
-    padding: 15px; 
+    padding: 15px;
   }
 
+  
+
+
+
+  .password {
+    width: 900px;
+    margin: 0 auto 30px auto;
+  }
 
 
 
