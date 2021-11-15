@@ -46,23 +46,7 @@ body {
     font-size: 22px;
   }
 
-  footer {
-    background: black;
-    width: 100%;
-    padding: 40px 35px;
-  }
-
-  footer h2 {
-    display: inline;
-    color: whitesmoke;
-    font-size: 30px;
-    margin: 0;
-  }
-
-  footer a {
-    color: whitesmoke;
-    float: right;
-  }
+  
 
   /* about me section style*/
   .intro {
@@ -93,7 +77,6 @@ body {
   /* run buddy style section */
 
   .run {
-      background: gray;
     text-align: center;
     
   }
@@ -116,32 +99,33 @@ body {
 
 /* remaining project "work" style */
 
+.class {
+    width: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
 
 
-  .password p {
+
+  .password p, .quiz p, .robo p{
     width: 80%;
     font-size: 20px;
     margin: 0 auto;  
   }
 
-  
-
-  .quiz p {
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;  
-  }
-
-  
 
   .password, .quiz, .robo {
     text-align: center;
-    background: rgb(58, 56, 56);
-
-
-
   }
 
+  .password img, .quiz img, .robo img {
+    width: 300px;  
+    height: auto;  
+    text-align: center;  
+    padding: 15px; 
+  }
 
 
 
