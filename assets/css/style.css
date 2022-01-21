@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:ital,wght@1,100&display=swap');
+
+:root {
+  --primary-color: rgb(88, 106, 106);
+  --secondary-color: rgb(185, 163, 148);
+  --tertiary-color: rgb(218, 212, 239);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,29 +14,34 @@
 
 
 body {
-    background-image: url(../images/computer-guy.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: Helvetica, Arial, sans-serif;
+   background: var(--tertiary-color);
+   font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
     
   }
 
   header {
     padding: 20px 35px;
-    background-color: rgb(14, 13, 13);
+    display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   position: sticky;
+   position: -webkit-sticky;
+   top: 0;
+   background: var(--primary-color);
   }
 
   header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: whitesmoke;
+    color: black;
     margin: 0;
-    display: inline;
+   
+
   }
   
   header a {
-    color: whitesmoke;
+    color: black;
   }
 
   header nav {
@@ -46,35 +59,47 @@ body {
     font-size: 22px;
   }
 
+  header nav ul li a:hover{
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    border-radius: 5px;
+    border-width: 35%;
+    text-shadow: none;
+  }
+
   
 
   /* about me section style*/
   .intro {
-    text-align: center;
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: solid;
+  border-color: var(--secondary-color);
+  width: 35%;
+  margin: 300px 500px 300px 500px;
+  font-size: 25px;
   }
 
-  .intro h2 {
-    font-size: 55px;
-    color: black;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: silver;
-    display: inline-block;
+  .about-me{ 
+    margin: 25px;
   }
-
-  .intro p {
-    color: black;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    border-bottom: 3px solid;
-    border-color: silver;
-  }
+  
 
   /* about me style end */
 
   /* run buddy style section */
+
+
+    
+  .container {
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  }
+
 
   .run {
     text-align: center;
@@ -82,7 +107,8 @@ body {
   }
 
   .run img {
-      width: 900px;
+    padding-top: 10px;
+      width: 300px;
   }
 
   .run h2 {
@@ -122,7 +148,7 @@ body {
 }
 
 
-  .password p, .quiz p, .robo p{
+  .password p, .run p, .robot p{
     width: 80%;
     font-size: 20px;
     margin: 0 auto;  
@@ -134,11 +160,41 @@ body {
     text-align: center;
   }
 
-  .password img, .quiz img, .robo img {
+  .password img, .run img, .robot img {
     width: 300px;  
-    height: auto;  
+    height: 300px;  
     text-align: center;  
     padding: 15px;
+    opacity: 0.5;
+  }
+
+  
+  footer {
+    background: var(--primary-color);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  }
+
+  footer ul {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  }
+
+  footer ul li {
+    display: inline;
+  }
+
+  footer ul li a {
+    padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  color: black;
   }
 
   
